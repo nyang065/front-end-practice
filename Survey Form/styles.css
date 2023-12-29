@@ -1,0 +1,77 @@
+#title, #description {
+  text-align: center;
+}
+
+body {
+  background-image: url(https://wallpaperaccess.com/full/5661842.jpg);
+  height: 100vh;
+  margin: auto;
+  color: white;
+  overflow: hidden;
+}
+
+main {
+  background-color: rgba(110, 110, 190, 0.3);
+  width: 100vw;
+  height: 100vh;
+  padding-top: 10px;
+}
+
+h1 {
+  padding-top: 30px;
+  padding-bottom: 0;
+  margin-bottom: -10px;
+}
+
+form {
+  background-color: rgba(110,110,190, 0.9);
+  max-width: 500px;
+  padding: 10px 0;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+fieldset {
+  border: none;
+}
+
+.gen-info label:not([class~="spec"]), .gen-info input {
+  display: inline-block;
+}
+.gen-info label:not([class~="spec"]) {
+  width: 10%;
+}
+.gen-info input {
+  width: 30%;
+  padding-left: 2px;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 0.05rem;
+  font-family: Helvetica, sans-serif;
+}
+
+#submit {
+  display: block;
+  margin: 0 auto;
+}
+
+textarea {
+  max-width: 470px;
+  min-width: 470px;
+  width: 470px;
+  margin: 0 auto;
+  min-height: 1.3rem;
+  max-height: 10.3rem;
+}
+
+label {
+  display: block;
+  margin: 10px auto;
+}
+
+select {
+  padding: 2px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <main>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Survey on You</p>
+      <form id="survey-form" method="post" action="?">
+        <fieldset class="gen-info">
+          <legend>General Information</legend>
+          <div>
+            <label id="name-label" for="name">Name </label>
+            <input id="name" type="text" required placeholder="Bob Smith" name="name">
+          </div>
+          <div>
+            <label id="email-label" for="email">Email </label>
+            <input id="email" type="email" required placeholder="abc123@gmail.com" name="email">
+          </div>
+          <div>
+            <label id="number-label" for="number">Age </label>
+            <input id="number" type="number" placeholder="18" name="age" min="13" max="100">
+          </div>
+          <div>
+            <label class="spec" for="dropdown">Gender
+              <select id="dropdown" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="q1">
+          <legend>Do you like games?</legend>
+          <label for="yes"><input id="yes" type="radio" name="like-games" value="Yes" checked> Yes</label>
+          <label for="no"><input id="no" type="radio" name="like-games" value="No"> No</label>
+        </fieldset>
+        <fieldset class="q2">
+          <legend>Social Media</legend>
+          <label for="media1"><input id="media1" type="checkbox" name="media" value="FaceBook"> FaceBook</label>
+          <label for="media2"><input id="media2" type="checkbox" name="media" value="X"> X</label>
+          <label for="media3"><input id="media3" type="checkbox" name="media" value="TikTok"> TikTok</label>
+        </fieldset>
+        <fieldset class="extra-info">
+          <legend>Short Description</legend>
+          <textarea name="bio" placeholder="I like to..."></textarea>
+        </fieldset>
+        <button id="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
