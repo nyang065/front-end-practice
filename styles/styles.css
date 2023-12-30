@@ -16,16 +16,14 @@ main {
 }
 
 .description {
+	width: 100vw;
   padding-top: 60px;
   text-align: center;
   padding-bottom: 10px;
 }
 
 .description p {
-	@media only screen and (max-width: 650px){
-		font-size: 0.7rem;
-	}
-	transition-duration: 1s;
+	font-size: min(1rem,2vw);
 }
 
 hr {
