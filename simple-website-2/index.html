@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Webpage 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Hi</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <a href="https://www.vecteezy.com/video/27869933-traveling-around-the-world-vector-illustration"><video src="./files/vecteezy_traveling-around-the-world-vector-illustration_27869933.mp4" muted loop autoplay alt="traveling around the world, vector illustration Stock Videos by Vecteezy"></video></a>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Never Stop</h2>
+            <h3>Exploring</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint magni earum impedit aliquam modi quasi facilis assumenda culpa at. Consequuntur delectus nemo ratione necessitatibus neque minus ex libero quidem repellat!</p>
+            <a href="#">Explore</a>
+        </div>
+        <ul class="social">
+            <li><a><img src="https://th.bing.com/th/id/R.4b69afaebd08a86b08c7a950b56005d0?rik=Rb6vswLwPrLedg&riu=http%3a%2f%2fwww.vectorico.com%2fwp-content%2fuploads%2f2018%2f02%2fTwitter-Logo.png&ehk=OHhD%2bkKSXV9UGeMirUJ9gRz81rofDPVnqa4f1HHtX2k%3d&risl=&pid=ImgRaw&r=0" alt=""></a></li>
+            <li><a><img src="https://1.bp.blogspot.com/-qdRfUNOtjkM/XeI_00z9pzI/AAAAAAAAF4E/FeD2SvVFnKUjPAKQ_cNM6-D2ahjKb0HkQCLcBGAsYHQ/s1600/Youtube-Icon-square-2340x2340-2.png" alt=""></a></li>
+            <li><a><img src="https://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19757.png" alt=""></a></li>
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const showcase = document.querySelector('.showcase')
+        const menuToggle = document.querySelector('.toggle')
+
+        menuToggle.addEventListener('click', () => {
+            showcase.classList.toggle('active')
+            menuToggle.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
