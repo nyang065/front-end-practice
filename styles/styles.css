@@ -21,6 +21,13 @@ main {
   padding-bottom: 10px;
 }
 
+.description p {
+	@media only screen and (max-width: 650px){
+		font-size: 0.7rem;
+	}
+	transition-duration: 1s;
+}
+
 hr {
   margin: 0 auto;
   width: 50%;
@@ -33,6 +40,11 @@ hr {
   align-items: center;
   justify-content: center;
   height: 120px;
+}
+
+.project {
+	width: 100vw;
+	text-align: center;
 }
 
 a {
